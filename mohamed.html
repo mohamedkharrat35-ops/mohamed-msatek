@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>رسالة إلى محمد بوعزيز 😂</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    background: radial-gradient(circle at top, #202030, #07070c 65%);
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header { padding: 50px 15px 20px; }
+
+h1 {
+    font-size: clamp(30px, 6vw, 55px);
+    color: #ff294d;
+    text-shadow: 0 0 25px #ff1744;
+}
+
+.subtitle { color: #ccc; }
+
+.container {
+    max-width: 850px;
+    padding: 20px;
+    margin: auto;
+}
+
+.card {
+    background: #fff0d5;
+    color: #191522;
+    padding: 30px;
+    border-radius: 18px;
+    margin: 25px 0;
+    box-shadow: 0 0 30px #ff294d30;
+    transform: rotate(-1deg);
+    transition: .3s;
+}
+
+.card:hover { transform: rotate(0) scale(1.02); }
+
+h2 { color: #e52245; }
+
+button {
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    background: #ed1744;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #ed174480;
+    transition: .2s;
+}
+
+button:hover { transform: scale(1.08); }
+
+#finger {
+    font-size: 85px;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform .25s;
+}
+
+#finger:hover { transform: rotate(-20deg) scale(1.2); }
+
+#message {
+    min-height: 35px;
+    color: #ff5270;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.score {
+    font-size: 28px;
+    color: #ffd447;
+    font-weight: 900;
+}
+
+.cards {
+    font-size: 55px;
+    letter-spacing: 5px;
+    animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+footer { padding: 30px; color: #888; }
+
+.confetti {
+    position: fixed;
+    top: -30px;
+    z-index: 10;
+    pointer-events: none;
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="cards">🂡 🂱 🃁 🃑</div>
+    <h1>رسالة تاريخية إلى محمد بوعزيز 💀</h1>
+    <p class="subtitle">حادثة البلوث التي لن ينساها التاريخ...</p>
+</header>
+
+<main class="container">
+
+    <section>
+        <h2>إلى صديقي العزيز 🖕</h2>
+        <div id="finger" onclick="sendFinger()">🖕</div>
+        <p id="message">اضغط على الإصبع إذا عندك الجرأة 😂</p>
+        <button onclick="sendFinger()">إرسال الإصبع 🚀</button>
+    </section>
+
+    <section class="card">
+        <h2>📜 رسالة إلى محمد بوعزيز وصاحبو</h2>
+
+        <p>عزيزي محمد بوعزيز، وبعد...</p>
+
+        <p>
+            نعلموك بكل أسف (وبكل فرحة بالنسبة لينا)
+            إنك اليوم دخلت التاريخ من أوسع أبوابه،
+            موش كلاعب بلوت، أما كأكبر كارثة عرفتها اللعبة 😂
+        </p>
+
+        <p>
+            يا محمد، كيفاش تلعب بلوت وتغلط الغلطة هاذي؟
+            الورق في يدك، والمخ في عطلة، والتركيز عامل
+            déconnexion من الجامعة!
+        </p>
+
+        <p>
+            إنت وصاحبك لعبتوا بكل ثقة، أما النتيجة
+            كانت درس مجاني في كيفية الخسارة باحتراف.
+        </p>
+
+        <p>
+            وبعد صراع تاريخي في جامعة
+            <strong>ISIMS – صفاقس</strong>،
+            نعلنوا رسمياً أن:
+        </p>
+
+        <div class="score">🏆 أنا وهشام ربحنا! 🏆</div>
+
+        <p>
+            محمد، ما تحزنش... كل واحد عندو موهبة،
+            وإنت موهبتك تفرّح الخصم بالورق متاعك 🤣
+        </p>
+
+        <p>
+            مع كامل الاحترام (والضحك)،<br>
+            أنا وهشام، أبطال البلوث متاع ISIMS.
+        </p>
+
+        <p><strong>ملاحظة:</strong> المرة الجاية جيب معاك مخّك قبل الورق. ❤️</p>
+    </section>
+
+    <section>
+        <div class="cards">🂱 🃑 🂡 🃁</div>
+        <h2>🏆 قاعة مشاهير الخاسرين</h2>
+        <p>محمد بوعزيز: خسارة اليوم، حكاية العمر 😂</p>
+        <button onclick="celebrate()">عاود ذكّرنا بالربحة 🎉</button>
+        <p id="victory"></p>
+    </section>
+
+</main>
+
+<footer>
+    Made with 😂 by the ISIMS Belote Champions
+    <br>أنا وهشام ضد العالم!
+</footer>
+
+<script>
+const messages = [
+    "🖕 هاذي من أبطال البلوث يا بطل!",
+    "يا محمد، حتى الورق استحى منك 😂",
+    "ISIMS باش تتفكرك بالربحة هاذي!",
+    "أنا وهشام: 🏆🏆 — إنت: 🤡",
+    "Game over يا معلم 💀"
+];
+
+let clicks = 0;
+
+function sendFinger() {
+    const finger = document.getElementById("finger");
+    const message = document.getElementById("message");
+
+    message.textContent = messages[clicks % messages.length];
+    clicks++;
+
+    finger.style.transform =
+        `rotate(${Math.random() * 50 - 25}deg) scale(1.25)`;
+
+    setTimeout(() => {
+        finger.style.transform = "rotate(0) scale(1)";
+    }, 300);
+}
+
+function celebrate() {
+    document.getElementById("victory").textContent =
+        "🏆 أنا وهشام أبطال ISIMS! محمد وصاحبو: إعادة المحاولة السنة الجاية 😂";
+
+    for (let i = 0; i < 70; i++) {
+        const piece = document.createElement("div");
+        piece.className = "confetti";
+        piece.textContent = ["🎉", "🃏", "🏆", "😂", "❤️"][
+            Math.floor(Math.random() * 5)
+        ];
+
+        piece.style.left = Math.random() * 100 + "vw";
+        piece.style.animationDuration = (2 + Math.random() * 3) + "s";
+        piece.style.fontSize = (15 + Math.random() * 25) + "px";
+
+        document.body.appendChild(piece);
+        setTimeout(() => piece.remove(), 5000);
+    }
+}
+</script>
+
+</body>
+</html>
